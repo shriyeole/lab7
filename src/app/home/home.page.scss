@@ -1,0 +1,65 @@
+ion-header {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* Style the ion-toolbar */
+ion-toolbar {
+  padding: 20px;
+}
+
+/* Style the ion-title */
+ion-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Style the ion-content */
+ion-content {
+  padding: 20px;
+}
+
+/* Style the ion-item */
+ion-item {
+  margin-bottom: 20px;
+}
+
+/* Style the ion-label */
+ion-label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the ion-input */
+ion-input {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* Style the ion-button */
+ion-button {
+  margin-top: 20px;
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* Style the ion-list */
+ion-list {
+  margin-top: 20px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* Style the ion-item inside ion-list */
+ion-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style the ion-label inside ion-item */
+ion-label {
+  font-weight: bold;
+  color: #333;
+}

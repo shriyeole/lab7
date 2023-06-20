@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      JSON Data Example
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Name</ion-label>
+    <ion-input [(ngModel)]="formData.name" name="name" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">UCID</ion-label>
+    <ion-input [(ngModel)]="formData.ucid" name="ucid" type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Department</ion-label>
+    <ion-input [(ngModel)]="formData.depar" name="depar" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Age</ion-label>
+    <ion-input [(ngModel)]="formData.age" name="age" type="number"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="postData()">Post Data</ion-button>
+
+  <ion-button expand="block" (click)="fetchData()">Fetch Data</ion-button>
+
+  <ion-list *ngIf="fetchedData.length > 0">
+    <ion-item *ngFor="let data of fetchedData">
+      <ion-label>{{ data.name }}</ion-label>
+      <ion-label>{{ data.ucid }}</ion-label>
+      <ion-label>{{ data.depar }}</ion-label>
+      <ion-label>{{ data.age }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
